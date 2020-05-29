@@ -1,0 +1,513 @@
+/* External CSS */
+/* Styles for the body */
+html {
+    scroll-behavior: smooth;
+  }
+
+  /* styles for body */
+body { 
+    background-color: #404040;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* styles for adopting mobile-first strategy */
+/* Id assigned in html files && Style for id= container */
+#container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* styles for all below tags */
+p, a, h1, h2, h3, h4, h5, h6, li, dt, dd, footer {
+    color: turquoise;
+}
+
+/* Styles for logo */
+header {
+    text-align: center;
+}
+
+/*     box-shadow: 12px 12px 12px teal; */
+
+/* Sty;es for nav bar containing links */
+nav {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    text-align: center;
+   
+}
+
+/* style specifies the padding and margins of unordered list in nav || fetch ul which is under navigation bar (nav tag)*/
+nav ul{
+    padding: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+nav li {
+    background-color: teal;
+    border-radius: 2em;
+    margin: 0.3em;
+    padding: 0.4em;
+    list-style-type: none;
+}
+
+/* style for the anchor tag */
+nav li a{
+    color: turquoise;
+    text-decoration: none;
+}
+
+/* styles for mobile class */
+.mobile{
+    display: inline;
+}
+
+/* styles for the desktop */
+.desktop{
+    display: none;
+}
+
+/* Styles for main div containing the information */
+main {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    /* margin-top: 0.5em; */
+    padding: 1em;
+    border-radius: 2em 0 2em 0;
+    opacity: 95%;
+    background-color: #ffffff;
+}
+
+/* styles for footer */
+footer {
+    font-size: .7em;
+    text-align: center;
+    margin-top: 2em;
+    color: #ffffff;
+}
+
+/* styles for tablet */
+.tablet {
+    display: none;
+}
+
+/* styles for class = equip */
+.equip {
+  display: none;
+}
+
+/* styles for anchor tag inside main */
+main a {
+    background-color: transparent;
+    font-weight: bold;
+    border-radius: 1em;
+    padding: 0.5em;
+    /* opacity: 50%; */
+    text-decoration: none;
+
+}
+
+/* styles for anchor tag inside footer */
+footer a {
+    text-decoration: none;
+}
+
+/* styles for the aside elements- nutrition page*/
+aside {
+    font-style: italic;
+
+}
+
+/* style for media query for tablet viewport target- min width 480px */
+@media only screen and (min-width:688px) {
+    /* styles specifies horizontal display for navigation links */
+    nav li {
+        float: left;
+        width: 18%;
+        margin-left: 1%;
+        margin-right: 1%;
+        padding-left: 0;
+        padding-right: 0;
+        white-space: nowrap;
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    /* styles for main */
+    main {
+        clear: left;
+        overflow: auto;
+
+    }
+
+/* styles for h1 element */
+    h1{
+        text-align: center;
+    }
+
+    /* styles for section element */
+    section {
+        background-color: #1d1d1c;
+        margin-left: 1em;
+    }
+
+    section p {
+        margin-left: 0;
+    }
+
+    body {
+        background-color: #ffffff;
+    }
+
+    /* styles for images which are in figure tag */
+    figure img {
+        background-color: #1d1d1c;
+        display: inline-block;
+        height: 8em;
+        width: 28%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    figure img:hover{
+       border-radius: 2em;
+    }
+
+    /* styles for anchar tag <a> inside figure*/
+    figure a {
+        background-color: transparent;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    /* styles for mobile class */
+    .mobile{
+        display: none;
+    }
+
+    /* styles for desktop */
+    .desktop{
+        display: inline;
+    }
+
+    /* styles for tablet class */
+    .tablet{
+        display: block;
+        margin-top: -3em;
+        margin-bottom: -1em;
+    }
+
+    /* styles for equip class */
+    .equip{
+        display: inline;
+        float: left;
+        margin-right: 1.5em;
+    }
+
+    /* styles for unordered list (class items)*/
+    .items{
+        display: block;
+        list-style-position: inside;
+    }
+/* styles for unordered list (class title-equip)*/
+    .title-equip {
+        clear: left;
+    }
+
+    /* styles for description list */
+    dt{
+        font-weight: bold;
+        margin-top: 0.7em;
+
+    }
+
+    /* Styles for section heading */
+    section h1 {
+        text-align: left;
+    }
+
+    /* styles for section anchor tag <a> */
+    section a {
+        background-color: transparent;
+        color: #1d1d1c;
+        font-weight: normal;
+        padding: 0;
+        text-decoration: underline;
+    }
+
+    /* styles for contact class */
+    .contact {
+        background-color: transparent;
+        color: #1d1d1c;
+        text-decoration: underline;
+        padding: 0;
+    }
+
+    /* styles for the article  */
+    article {
+        background-color: #c1d9ca;
+        float: left;
+        margin: 0.5%;
+        padding: 0.5%;
+        width: 31%;
+        text-align: center;
+    }
+
+    /* styles for article img */
+    article img {
+        border: solid 0.1em #1d1d1c;        
+    }
+
+    /* styles for article p */
+    article p {
+        color: #ffffff;
+        margin-top: 2%;
+        padding: 1%;
+        text-align: left;
+    }
+
+    /* styles for article ul */
+    article ul {
+        color: #ffffff;
+        text-align: left;
+    }
+
+   article h2, article ul li {
+        color: #ffffff;
+    }
+
+    /* styles for aside element */
+    aside {
+        background-color: #ffffff;
+        border-radius: 0 5em 5em 5em;
+        padding: 1.5em;
+        margin: 1em;
+    }
+
+    /* stles for main - nutrtion */
+    .flex-container {
+        display: flex;
+    }
+
+     /* styles for table element */
+    table {
+        border: 0.1em solid #000000;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /* styles for th and tr */
+    th, td {
+    border: 0.1em solid #000000;
+    padding: 1em;
+}
+
+/* styles for the th */
+    th {
+    background-color: #1d1d1c;
+    color: #ffffff;
+}
+
+    /* styles for the caption */
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
+}
+
+/* media query for desktop view port*/
+@media only screen and (min-width:884px) {
+
+    /* styles for container id */
+    #container{
+        width: 99%;
+        height: 99%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* styles for header */
+    header{
+        text-align: left;
+        background-color: #1d1d1c;
+    }
+
+    section {
+        background-color: #ffffff;
+    }
+
+    /* styles for nav */
+    nav {
+        float: right;
+        margin-top: -7em;
+        margin-right: 3em;
+        margin-bottom: 0;
+        width: 65%;
+    }
+
+    /* styles for ul in nav */
+    nav ul {
+        margin: 0;
+        padding-left: 0.5%;
+        padding-right: 0.5%;
+    }
+
+    /* styles for li in nav */
+    nav li {
+        border-radius: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+        width: 20%;
+    }
+
+    /* styles for anchor tag <a> in nav */
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+    }
+
+    /* styles for the main */
+    main{
+        background-color: #1d1d1c;
+        border-style: none;
+        border-radius: 0em;
+    }
+
+    /* styles for paragraph inside main */
+    main p {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* styles for pseudo-class  format -  selector:pseudo-class{}*/
+    /* when the link is not visited */
+    nav li a:link{
+        color: white;
+    }
+    /* when the link is visible */
+    /* nav li a:visited{
+        color:#404040
+    } */
+
+    /* pseudo class when hover in over link */
+    nav li a:hover{
+        color: #9d9d93;
+    }
+    nav li a:active{
+        color: #404040;
+    } 
+
+    /* styles for body giving gredient */
+    body {
+        background-color: #ffffff;
+        background-attachment: fixed;
+    }
+
+    /* styles for images in figure element */
+    figure img {
+        height: 15em;
+        opacity: 0.7;
+    }
+
+    /* styles remove transparency on hover */
+    figure img:hover {
+        opacity: 1;
+    }
+
+    /* styles for header */
+    h1 {
+        color: teal
+    }
+
+    /* styles for footer */
+    footer {
+        background-color: #2a2a2a;
+        margin-top: -0.2em;
+        padding: 2em;
+    }
+
+    main h2 {
+        color: #ffffff;
+    }
+    
+    section {
+        background-color: #1d1d1c;
+    }
+
+    /* styles for h2 element in article - nutrition page */
+    article h2 {
+        color: #000000;
+
+    }
+    
+    /* styles for table element */
+    table {
+        color: #ffffff;
+        width: 85%;
+    }
+
+    /* styles for the caption */
+    caption {
+        color: #ffffff;
+    }
+
+    /*  */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+styles for unordered list 
+ul{
+    margin-bottom: 50px;
+    list-style-position: inside;
+}
+
+styles for description list title || definition list title 
+dt{
+    font-weight: bold;
+}
+
+ styles for description list data 
+dd{
+    padding-bottom: 20px;
+} 
+
+body{
+        background: -moz-linear-gradient(#404040, teal); Firefox
+        background: -o-linear-gradient(#404040, teal); Opera
+        background: linear-gradient(#404040, teal);
+        background: -webkit-linear-gradient(45deg,#404040, teal); Safari and Chrome 
+
+}
+*/
