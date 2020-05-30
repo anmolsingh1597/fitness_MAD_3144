@@ -50,6 +50,8 @@
         <option value="9">9</option>
     </select>
     <button id="guess-number"> Guess</button>
+    <button id="guess-the-square">Guess the square</button>
+    <button id="submit">Enter Password</button>
 </p>
     <script type="text/javascript">
         // alert("Page is loaded")
@@ -117,6 +119,34 @@
                 }
             }
     }
+
+     //exercise-3
+    document.getElementById("guess-the-square").onclick = function () {
+    
+     let number = prompt("Enter a number: ");
+
+    if(number % Math.sqrt(number) === 0) {
+         console.log("sqaure!")
+            document.getElementById("js-demo").innerHTML = "<h1>Hurray!!!</h1>"
+}
+    else{
+        console.log("error")
+            document.getElementById("js-demo").innerHTML = "<h1>Sorry!!!</h1>"
+    };
+    }
+
+    //exercise-4
+    document.getElementById("submit").onclick = function() {
+        let password = prompt("Enter your password: ")
+        let demoPassword = "anmol"
+        if (password == demoPassword){
+            alert("Password is correct!")
+        }
+        else{
+            alert("Password is incorrect")
+        };
+    }
+    
 
     </script>
 </body>
