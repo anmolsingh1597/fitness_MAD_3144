@@ -91,6 +91,33 @@
         }
     }
 
+    // exercise 2
+    // create a function
+    function guessMyNumber(number){
+        let randomNumer = Math.random() * 10;
+                randomNumer = Math.floor(randomNumer);
+        if(randomNumer == number){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    document.getElementById("guess-number").onclick = function () {
+        let myNumber = document.getElementById("number-selected").value;
+        let guessTrue = false;
+        let guessNumber = 1;
+            while(guessTrue == false){
+                // let randomNumer = Math.random() * 10;
+                // randomNumer = Math.floor(randomNumer);
+                if(guessMyNumber(myNumber)){
+                    alert("Hurray!! you guessed it before " + guessNumber + " times");
+                    guessTrue = true; 
+                }else{
+                    guessNumber++;
+                }
+            }
+    }
+
     </script>
 </body>
 </html>
