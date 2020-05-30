@@ -147,6 +147,28 @@ form ul {
     display: inline-block;
 }
 
+/* styles for the video class */
+.video {
+    display: none;
+    }
+
+    /* styles for copyright id */
+#copyright {
+    float: left;
+    margin-top: 2em;
+    width: 80%;
+}
+
+#social {
+    float: right;
+    width: 20%;
+}
+
+/* styles for social img */
+#social img {
+    padding: 0.5em;
+}
+
 /*media query for tablet viewport target- min width 688px */
 @media only screen and (min-width:688px) {
     /* styles specifies horizontal display for navigation links */
@@ -188,6 +210,19 @@ form ul {
         background-color: #ffffff;
     }
 
+    /* styles for video */
+    .video {
+        padding: 0.5em;
+        padding-top: 2em;
+        text-align: center;
+        clear: left;
+    }
+    
+    video {
+        border: 0.5em ridge #ffffff;
+        height: auto;
+        max-width: 100%;
+    }
     /* styles for images which are in figure tag */
     figure img {
         background-color: #1d1d1c;
@@ -216,7 +251,7 @@ form ul {
 
     /* styles for desktop */
     .desktop{
-        display: inline;
+        display: block;
     }
 
     /* styles for tablet class */
@@ -353,10 +388,10 @@ form ul {
         text-align: right;
         width: 10em;
     }
-    /* styles for btn class */
-    .btn {
-
-    }
+    /* styles for footer logo class */
+    /* .logo-footer {
+        background-color: aquamarine;
+    } */
 }
 
 /* media query for desktop view port*/
@@ -470,6 +505,7 @@ form ul {
         background-color: #2a2a2a;
         margin-top: -0.2em;
         padding: 2em;
+        overflow: auto;
     }
 
     main h2 {

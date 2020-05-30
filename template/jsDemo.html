@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" id="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+
+<style>
+    button {
+        background-color: aquamarine;
+    }
+
+    body {
+        background-color: bisque;
+    }
+</style>
+    
+</head>
+<body>
+    <p id="js-demo">This is the javascript demo!</p>
+    <p id="second-paragraph"></p>
+    <label for="text-input">Name:</label>
+    <input type="text" id="text-input">
+    <p></p>
+    <button 
+    id="my-btn"
+    style="padding: 2em;" 
+    onclick="alert('Hello Everyone! what\'s the weather?')"
+    >
+        Click Me
+    </button>
+    <button
+    id="rst"
+    style="padding: 2em;">
+    Reset
+    </button>
+
+    <p>
+    <label for="refernce">Guess the number:</label>
+    <select name="refernce" id="number-selected">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+    <button id="guess-number"> Guess</button>
+</p>
+    <script type="text/javascript">
+        // alert("Page is loaded")
+        // this is comment
+        /*
+        ...this is multi line comment
+        */
+        document.getElementById("my-btn").onclick = function () {
+        //  document.getElementById("js-demo").innerHTML = document.getElementById("text-input").value;
+        //  document.getElementById("second-paragraph").innerHTML = "<h1>This is h1 heading</h1>"
+
+        //variable
+        let nameEntered = "";
+        nameEntered = document.getElementById("text-input").value;
+        document.getElementById("second-paragraph").innerHTML = "<h1>" + nameEntered +"</h1>";
+    };
+    document.getElementById("rst").onclick = function (){
+        // document.getElementById("second-paragraph").innerHTML = "<style>button {background-color: bisque;}</style>";
+        document.getElementById("js-demo").style.display = "none";
+        // document.getElementById("second-paragraph").style.display = "none";
+        // document.getElementById("page").style.backgroundColor = '#fff';
+        document.getElementsByTagName("body")[0].style.backgroundColor = '#fff'; // because it return an array
+    }
+
+    // exercise 1
+        
+
+        document.getElementById("guess-number").onclick = function () {
+            var number = 8;
+            let myNumber = document.getElementById("number-selected").value;
+            let randomNumer = Math.random() * 10;
+            randomNumer = Math.floor(randomNumer);
+            console.log(randomNumer);
+            console.log(myNumber);
+        if (myNumber == randomNumer){
+            alert("Hurray your number matched") 
+        }else {
+            alert("Error")
+        }
+    }
+
+    </script>
+</body>
+</html>
